@@ -1,0 +1,214 @@
+    :root {
+
+        --clr-primary-400: hsl(36, 68%, 70%);
+        --clr-primary-300: hsl(36, 68%, 80%);
+        --clr-secondary-200: hsl(30, 38%, 92%);
+    
+        --clr-neutral-900: hsl(0, 2%, 11%);
+        --clr-neutral-800: hsl(0, 2%, 15%);
+        --clr-neutral-400: hsl(225, 3%, 52%);
+        --clr-neutral-100: hsl(0, 0%, 100%);
+    
+    
+        --ff-accent: 'Fraunces', serif;
+        --ff-base: "Poppins", sans-serif;
+    }
+
+    nav .fas {
+        display: none;
+    }
+
+    @media only screen and (max-width: 800px){
+
+        /* -------- general styling -------- */
+        .main-container, header {
+            padding-inline: 1rem;
+        }
+
+        .heading {
+            font-size: 3rem;
+        }
+
+        /* -------- header section -------- */
+
+        nav .fas {
+            display: block;
+            font-size: 25px;
+        }
+
+        nav ul {
+            z-index: 1;
+            color: var(--clr-neutral-100);
+            background-color: var(--clr-primary-400);
+            position: fixed;
+            width: 80%;
+            top: 0;
+            right: -300px;
+            height: 100vh;
+            padding-top: 50px;
+            flex-direction: column;
+
+            transition: right 0.5s;
+        }
+
+        nav ul li{
+            display: block;
+            margin: 25px;
+        }
+
+        nav ul .fas {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+    
+
+        /* -------- hero section -------- */
+
+        .hero-section .my-img {
+            width: 80vw;
+        }
+
+        .img-container {
+            text-align: center;
+        }
+
+        .hero-section {
+            flex-direction: column-reverse;
+        }
+
+        .my-brief {
+            text-align: center;
+        }
+
+        .my-brief h1 {
+            font-size: 40px;
+        }
+
+        .text-animation {
+            font-size: 20px;
+            font-weight: 600;
+            min-width: 280px;
+            margin-bottom: 1.2rem;
+        }
+
+        .social-icons {
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        
+
+        /* -------- text animation -------- */
+
+        .text-animation span::after {
+            max-height: 3rem;
+        }
+
+        @keyframes cursor {
+            to {
+                border-left: 2px solid var(--clr-primary-400);
+                max-height: 3rem;
+            }
+        }
+        
+
+          /* -------- about section -------- */
+
+
+
+          .about-col-1, .about-col-2 {
+            flex-basis: 100%;
+          }
+
+          .about-col-1 {
+            margin-bottom: 30px;
+          }
+
+          .about-col-2 {
+            font-size: 14px;
+          }
+
+          .tab-links {
+            font-size: 1rem;
+            margin-right: 20px;
+          }
+
+          /* -------- services section -------- */
+
+          .services-container {
+            display: block;
+          }
+
+          .service-box {
+            margin-top: 2rem;
+          }
+
+          /* -------- portfolio section -------- */
+
+          .work-list {
+            display: block;
+          }
+
+          .work {
+            margin-top: 2rem;
+          }
+
+          #portfolio .btn {
+            width: 55%;
+            font-size: 17px;
+          }
+
+           /* -------- contact section -------- */
+           .contact-left, .contact-right {
+                flex-basis: 100%;
+                margin-bottom: 2rem;
+           }
+
+           .contact-right {
+            text-align: center
+           }
+
+           /* -------- footer section -------- */
+
+           .footer {
+            font-size: .8rem;
+           }
+           
+    }
+
+
+    @media only screen and (min-width: 801px) and (max-width: 1450px) {
+        /* -------- hero section -------- */
+
+
+        .hero-section {
+            gap: 2rem;
+        }
+
+        .hero-section .my-img {
+            width: 400px
+        }
+        
+
+        
+        /* -------- text animation -------- */
+        .text-animation {
+            font-size: 20px;
+            font-weight: 600;
+            min-width: 280px;
+            margin-bottom: 1.2rem;
+        }
+
+        .text-animation span::after {
+            max-height: 2rem;
+        }
+
+        @keyframes cursor {
+            to {
+                border-left: 2px solid var(--clr-primary-400);
+                max-height: 2rem;
+            }
+        }
+    }

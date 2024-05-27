@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Ramma</title>
+
+    <link rel="icon" type="image/jpg" href="assets/images/Abhi-02.jpg">
+
+    <!-- custom css files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/1b11d71c54.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="desktop-nav" class="flex">
+            <a href="#landing" class="logo">A<span class="ramma">R</span><span class="dot">.</span></a>
+
+            <ul id="sideMenu" class="nav-links flex">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" id="menu-icon" onclick="openMenu()"></i>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section id="landing">
+            <!-- --------------- hero section --------------- -->
+            <div class="hero-section flex">
+
+                <div class="my-brief flex">
+                    <h1>Hello, It's <span class="my-name">Abhi</span></h1>
+                    <h3 class="text-animation">I'm a <span></span></h3>
+                    <div class="social-icons flex">
+                        <a href="https://www.instagram.com/abhishekramma/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abhishek-ramma/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ShekAbhi13" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="assets/images/Abhi-02.jpg" class="my-img" alt="abhi-img">
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- --------------- about section --------------- -->
+        <section id="about">
+            <h2 class="heading">About Me</h2>
+            <div class="about-container">
+                <div class="row flex">
+                    <div class="about-col-1">
+                        <img src="assets/images/my-abt-img.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <p>I am Abhishek Ramma, a versatile professional with expertise in UI/UX design, web
+                            development, and software development. With a keen eye for aesthetics and a strong technical
+                            background, I create intuitive and visually appealing digital experiences. My skills range
+                            from crafting user-friendly interfaces to developing robust web applications. Passionate
+                            about innovation and user-centered design, I continuously seek to enhance the digital
+                            landscape. My work reflects a blend of creativity, precision, and technical excellence.
+                        </p>
+
+                        <div class="abt-tabs flex">
+                            <p class="tab-links active-link" onclick="opentab('bio')">Bio</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="bio">
+                            <ul>
+                                <li><span>Name</span><br>Abhishek Ramma</li>
+                                <li><span>Age</span><br>23 years old</li>
+                                <li><span>Country</span><br>Mauritius</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Software Development</span><br>Building Android apps</li>
+                                <li><span>Frontend Development</span><br>Developing apps Frontend</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018</span><br>Higher School Certificate</li>
+                                <li><span>2023 - Current</span><br>BSc Web and Multimedia Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- --------------- services section --------------- -->
+        <section id="services">
+            <h2 class="heading">Services</h2>
+            <div class="services-container grid">
+                <div class="service-box">
+                    <div class="service-info">
+                        <i class="fa-solid fa-crop"></i>
+                        <h4>UI/UX <br>Design</h4>
+                        <p>Create stunning and user-friendly websites for your business.</p>
+                    </div>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-box">
+                    <div class="service-info">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Frontend Development</h4>
+                        <p>Develop robust and scalable websites tailored to your needs.</p>
+                    </div>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="service-box">
+                    <div class="service-info">
+                        <i class="fa-brands fa-app-store"></i>
+                        <h4>Software Development</h4>
+                        <p>Create innovative and user-friendly mobile applications.
+                            corporis libero ducimus in totam id rerum.</p>
+                    </div>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- --------------- portfolio section --------------- -->
+        <section id="portfolio" class="portfolio-container">
+            <h2 class="heading">My Work</h2>
+            <div class="gallery-container">
+                <div class="work-list grid">
+                    <div class="work">
+                        <img src="assets/images/my-work-1.1.jpg" alt="">
+                        <div class="layer">
+                            <h3>Age Calculator app</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, facere.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/images/my-work-2.1.png" alt="">
+                        <div class="layer">
+                            <h3>Contact Us <br> Page Design</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, facere.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/images/my-work-3.1.png" alt="">
+                        <div class="layer">
+                            <h3>QR Code Component Design</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, facere.</p>
+                            <a href="https://qr-code-challenge001.netlify.app/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <video autoplay loop src="assets/videos/my-work-4.mp4"></video>
+                        <div class="layer">
+                            <h3>Product Preview Frontend</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, facere.</p>
+                            <a href="https://product-preview-card-frontend01.netlify.app/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </section>
+        <!-- ------------ contact section ------------- -->
+        <section id="contact">
+            <h2 class="heading">Contact Me</h2>
+            <div class="contact-container">
+                <div class="row flex">
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-envelope"></i> rammaabhishek@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 59876543</p>
+                        <a href="assets/CV RAMMA Abhishek.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                            <input type="text" name="Email" id="email" placeholder="Your Email" required>
+                            <textarea name="Message" id="message" rows="6" placeholder="Your message"></textarea>
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright © Abhishek 2024</p>
+    </footer>
+
+
+    <!-- js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
