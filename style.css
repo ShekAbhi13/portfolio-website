@@ -136,7 +136,7 @@ nav {
     letter-spacing: 0.5px;
     padding: 0 10px;
 }
-.nav-links a:after{
+.nav-links a::after{
     content: "";
     position: absolute;
     background-color: var(--clr-primary-400);
