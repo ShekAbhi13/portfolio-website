@@ -24,7 +24,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-    sideMenu.style.right = "-300px";
+    sideMenu.style.right = "-400px";
 }
 
 // ----------- Message from my website -----------
